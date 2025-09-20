@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Are You Ready?</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #c8e6c9, #f1f8e9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      text-align: center;
+      background: white;
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      max-width: 450px;
+    }
+    h1 {
+      font-size: 28px;
+      color: #4e6e50;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    button {
+      background-color: #7fae7c;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #6d9b6a;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Are you ready to begin your GlowCare journey?</h1>
+    <p>We’re excited to help you discover the best skincare tailored just for you!</p>
+    <form action="/new_user_questionnaire" method="get">
+      <button type="submit">Let’s Start</button>
+    </form>
+  </div>
+</body>
+</html>

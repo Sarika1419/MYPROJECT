@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New User Questionnaire</title>
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9); /* Olive green background */
+    padding: 30px;
+}
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+h2 {
+    text-align: center;
+    color: #2e7d32; /* Olive green heading */
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #66bb6a; /* Olive green button */
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background: #4caf50; /* Darker green on hover */
+}
+</style>
+</head>
+<body>
+<h2>New User Questionnaire</h2>
+<form method="POST">
+    <label>Age</label>
+    <select name="Age">
+        <option>Below 18</option><option>18–25</option><option>26–35</option>
+        <option>36–45</option><option>46–60</option><option>60+</option>
+    </select>
+    <label>Gender</label>
+    <select name="Gender">
+        <option>Female</option><option>Male</option>
+    </select>
+    <label>Skin Type</label>
+    <select name="Skin Type">
+        <option>Oily</option><option>Dry</option><option>Combination</option>
+        <option>Sensitive</option><option>Normal</option>
+    </select>
+    <label>Redness or Inflammation</label>
+    <select name="Redness or Inflammation">
+        <option>Yes</option><option>No</option><option>Sometimes</option>
+    </select>
+    <label>Water Intake</label>
+    <select name="Water Intake">
+        <option>3–4</option><option>5–6</option><option>7–8</option><option>9 or more</option>
+    </select>
+    <label>Diet Type</label>
+    <select name="Diet Type">
+        <option>High in Sugar</option><option>Balanced (Fruits + Veggies)</option>
+        <option>Processed or Fast Food</option><option>Vegetarian</option>
+        <option>High in Protein</option>
+    </select>
+    <label>Sun Exposure</label>
+    <select name="Sun Exposure">
+        <option>Daily</option><option>Often</option><option>Rarely</option>
+    </select>
+    <label>Uses SPF</label>
+    <select name="Uses SPF">
+        <option>Yes</option><option>No</option>
+    </select>
+    <label>Natural Remedies Used</label>
+    <select name="Natural Remedies Used">
+        <option>Turmeric</option><option>Aloe Vera</option><option>Oatmeal</option>
+        <option>Rose Water</option><option>Besan (Gram Flour)</option><option>None</option>
+    </select>
+    <label>Cleansing Frequency</label>
+    <select name="Cleansing Frequency">
+        <option>Once</option><option>Twice</option>
+    </select>
+    <label>Water Temperature</label>
+    <select name="Water Temperature">
+        <option>Cold</option><option>Warm</option><option>Hot</option>
+    </select>
+    <label>Sleep Hours</label>
+    <select name="Sleep Hours">
+        <option>4 or fewer</option><option>5–6</option><option>7–8</option>
+    </select>
+    <label>Stress Frequency</label>
+    <select name="Stress Frequency">
+        <option>Rarely</option><option>Moderate</option><option>Often</option><option>High</option>
+    </select>
+    <label>Vitamin E Awareness</label>
+    <select name="Vitamin E Awareness">
+        <option>Yes</option><option>No</option>
+    </select>
+    <label>Tried DIY Skincare Recently</label>
+    <select name="Tried DIY Skincare Recently">
+        <option>Yes</option><option>No</option>
+    </select>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GlowCare | Register</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #e8f5e9, #c8e6c9); /* Olive green gradient */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .register-box {
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h2 {
+            text-align: center;
+            color: #2e7d32; /* Olive green heading */
+            margin-bottom: 20px;
+        }
+        input[type=text], input[type=email], input[type=password] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: #66bb6a; /* Olive green button */
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type=submit]:hover {
+            background-color: #4caf50; /* Darker green hover */
+        }
+        .message {
+            margin-top: 15px;
+            text-align: center;
+            color: red;
+        }
+        .link {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .link a {
+            color: #2e7d32; /* Olive green link */
+            text-decoration: none;
+        }
+        .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-box">
+        <h2>Create Your Account</h2>
+        <form method="POST" action="/register">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm" placeholder="Confirm Password" required>
+            <input type="submit" value="Register">
+        </form>
+        {% if message %}
+            <div class="message">{{ message }}</div>
+        {% endif %}
+        <div class="link">
+            Already have an account? <a href="/loginnew">Login here</a>
+        </div>
+    </div>
+</body>
+</html>

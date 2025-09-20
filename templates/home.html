@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GlowCare</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: url('https://images.unsplash.com/photo-1617385908365-4ccaa9abf4c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') 
+            no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.4); /* soft white overlay */
+            backdrop-filter: blur(6px);
+        }
+
+        .navbar {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #2e7d32; /* olive green text */
+            background: rgba(200, 230, 201, 0.8); /* light green background */
+            border: 1px solid #a5d6a7; /* soft green border */
+            padding: 10px 18px;
+            margin-left: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #66bb6a; /* medium green hover */
+            color: white;
+            border-color: #4caf50;
+        }
+
+        .centered-text {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #2e7d32; /* olive green text */
+        }
+
+        .centered-text h1 {
+            font-size: 55px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #c8e6c9, #a5d6a7); /* olive gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .centered-text p {
+            font-size: 22px;
+            color: #33691e; /* darker olive for subtitle */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="navbar">
+        <a href="/login">Login</a>
+        <!--<a href="/admin">Admin</a>-->
+        <a href="/about">About</a>
+    </div>
+
+    <div class="centered-text">
+        <h1>Welcome to GlowCare</h1>
+        <p>Your personal skincare assistant</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Returning User Questionnaire - GlowCare</title>
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #e8f5e9, #c8e6c9); /* Olive green theme */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .container {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        max-width: 600px;
+        width: 100%;
+    }
+    h1 {
+        text-align: center;
+        color: #2e7d32; /* Olive green heading */
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin: 15px 0 5px;
+    }
+    select, input[type="radio"], input[type="checkbox"] {
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+    button {
+        background-color: #66bb6a; /* Olive green button */
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    button:hover {
+        background-color: #4caf50; /* Darker green on hover */
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Returning User Questionnaire ✨</h1>
+    <form method="POST">
+        <label>Have you been following your recommended skincare routine?</label>
+        <select name="follows_routine" required>
+            <option value="">Select</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Have you experienced any irritation or discomfort?</label>
+        <select name="irritation" required>
+            <option value="">Select</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Recent changes in your skin?</label>
+        <select name="skin_change" required>
+            <option value="">Select</option>
+            <option>Flaky or Peeling Skin</option>
+            <option>Uneven Skin Tone</option>
+            <option>Skin Getting Worse</option>
+            <option>Skin Getting Better</option>
+        </select>
+
+        <label>Has your skin improved in the past 2 weeks?</label>
+        <select name="improvement" required>
+            <option value="">Select</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <label>Have you tried any new home remedies recently?</label>
+        <select name="new_diy" required>
+            <option value="">Select</option>
+            <option>Yes</option>
+            <option>No</option>
+        </select>
+
+        <button type="submit">Submit Questionnaire</button>
+    </form>
+</div>
+</body>
+</html>

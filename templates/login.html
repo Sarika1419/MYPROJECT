@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Login Type - GlowCare</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fceff9, #e0f7fa);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    h1 {
+      color: #444;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 40px 30px;
+      width: 260px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      text-decoration: none;
+      background-color: #a5d8ff;
+      color: #003b57;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: #74c0fc;
+    }
+
+    .back-home {
+      margin-top: 20px;
+    }
+
+    .back-home a {
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .back-home a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to GlowCare</h1>
+    <div class="card-container">
+      <div class="card">
+        <h2>New User</h2>
+        <p>If you're visiting for the first time, register here.</p>
+        <a href="/register">Register</a>
+      </div>
+      <div class="card">
+        <h2>Returning User</h2>
+        <p>If you already have an account, log in here.</p>
+        <a href="/loginuser">Login</a>
+      </div>
+    </div>
+    <div class="back-home">
+      <a href="/">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
+
